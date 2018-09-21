@@ -26,7 +26,7 @@ public class Handle {
         while (titulo.length() > 0) {
             aux = (int) titulo.charAt(0);
             titulo = titulo.substring(1);
-            if (aux == 32 || aux > 96 && aux < 123) {
+            if (aux == 32 ||(aux >= 48 && aux <= 57) || (aux > 96 && aux < 123)) {
                 novoTitulo.append((char)aux);
             }
             else if (aux > 64 && aux < 91) {
